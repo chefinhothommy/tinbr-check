@@ -1434,7 +1434,7 @@ export default function SigiloX() {
                     Veja as fotos, conversas e localização exata do perfil.
                   </p>
                   <Button
-                    onClick={() => setCurrentStep("offer")}
+                    onClick={() => window.open("https://go.mundpay.com/xzbbnljpyb", "_blank")}
                     className="bg-gradient-to-r from-[#FF0066] to-[#FF3333] hover:from-[#FF0066] hover:to-[#FF3333] text-white font-bold py-3 sm:py-4 px-6 sm:px-8 text-base sm:text-lg rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full touch-manipulation"
                   >
                     🔓 DESBLOQUEAR RELATÓRIO AGORA
