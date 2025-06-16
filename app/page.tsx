@@ -712,7 +712,7 @@ export default function SigiloX() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               className="min-h-screen bg-[#6C63FF] relative overflow-hidden">
-              {/* Floating dots - Reduced for mobile */}
+              {/* * Floating dots - Reduced for mobile */}
               <div className="absolute inset-0">
                 {[...Array(10)].map((_, i) => (
                   <motion.div
