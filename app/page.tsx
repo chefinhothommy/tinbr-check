@@ -147,7 +147,7 @@ export default function SigiloX() {
       {
         id: "verification",
         label: "Verif",
-        fullLabel: "Verificação", 
+        fullLabel: "Verificação",
         mobileLabel: "Verif",
         completed: ["verification", "preliminary", "generating", "result", "offer"].includes(currentStep),
       },
@@ -349,9 +349,9 @@ export default function SigiloX() {
   // Funções do carrossel
   const blockedImages = [
     "/placeholder.svg?height=300&width=200&text=Foto+Bloqueada+1",
-    "/placeholder.svg?height=300&width=200&text=Foto+Bloqueada+2", 
+    "/placeholder.svg?height=300&width=200&text=Foto+Bloqueada+2",
     "/placeholder.svg?height=300&width=200&text=Foto+Bloqueada+3",
-    "/placeholder.svg?height=300&width=200&text=Foto+Bloqueada+4"
+    "/placeholder.svg?height=300&width=200&text=Foto+Bloqueada+4",
   ]
 
   const nextSlide = () => {
@@ -589,7 +589,6 @@ export default function SigiloX() {
                   </div>
 
                   {/* Testimonials Section - Mobile Optimized with Real Avatars */}
-                  {/* Testimonials Section - Enhanced Authenticity */}
                   <div className="text-center mb-8 sm:mb-12">
                     <h3 className="text-lg sm:text-2xl md:text-3xl font-bold text-[#333333] mb-6 sm:mb-8 px-2">
                       NÃO FIQUE NA DÚVIDA – VEJA O QUE OUTROS DESCOBRIRAM
@@ -603,7 +602,8 @@ export default function SigiloX() {
                           alt="Foto de Ana"
                           className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover flex-shrink-0 border-2 border-gray-200 shadow-sm"
                           onError={(e) => {
-                            e.currentTarget.src = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            e.currentTarget.src =
+                              "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                           }}
                         />
                         <div className="flex-1 min-w-0 text-left">
@@ -612,40 +612,52 @@ export default function SigiloX() {
                             <p className="text-xs sm:text-sm text-green-600 font-medium">✓ Usuária Verificada</p>
                           </div>
                           <div className="mb-3">
-                            <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 float-left mr-1 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                            <svg
+                              className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 float-left mr-1 mt-1"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
                             </svg>
-                          <p className="text-[#444444] text-base sm:text-lg leading-relaxed font-normal">
-                            Achei que ele tinha desinstalado o Tinder... Mas depois da análise, vi que ele ainda estava curtindo perfis de outras mulheres. Foi um choque… Mas pelo menos agora eu sei a verdade.
-                          </p>
-                        </div>
-                        <div className="flex items-center text-[#FFD700] text-sm sm:text-base gap-1">
-                          <span>⭐⭐⭐⭐⭐</span>
+                            <p className="text-[#444444] text-base sm:text-lg leading-relaxed font-normal">
+                              Achei que ele tinha desinstalado o Tinder... Mas depois da análise, vi que ele ainda
+                              estava curtindo perfis de outras mulheres. Foi um choque… Mas pelo menos agora eu sei a
+                              verdade.
+                            </p>
+                          </div>
+                          <div className="flex items-center text-[#FFD700] text-sm sm:text-base gap-1">
+                            <span>⭐⭐⭐⭐⭐</span>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    {/* Carlos's Testimonial */}
-                    <div className="testimonial-card bg-white rounded-xl shadow-lg p-4 sm:p-5 flex items-start gap-4">
-                      <img
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                        alt="Foto de Carlos"
-                        className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover flex-shrink-0 border-2 border-gray-200 shadow-sm"
-                        onError={(e) => {
-                          e.currentTarget.src = "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                        }}
-                      />
-                      <div className="flex-1 min-w-0 text-left">
-                        <div className="mb-2">
-                          <p className="font-bold text-[#333333] text-base sm:text-lg">Carlos</p>
-                          <p className="text-xs sm:text-sm text-blue-600 font-medium">Análise feita em Junho 2025</p>
-                        </div>
-                        <div className="mb-3">
-                          <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 float-left mr-1 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
-                          </svg>
+                      {/* Carlos's Testimonial */}
+                      <div className="testimonial-card bg-white rounded-xl shadow-lg p-4 sm:p-5 flex items-start gap-4">
+                        <img
+                          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                          alt="Foto de Carlos"
+                          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover flex-shrink-0 border-2 border-gray-200 shadow-sm"
+                          onError={(e) => {
+                            e.currentTarget.src =
+                              "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                          }}
+                        />
+                        <div className="flex-1 min-w-0 text-left">
+                          <div className="mb-2">
+                            <p className="font-bold text-[#333333] text-base sm:text-lg">Carlos</p>
+                            <p className="text-xs sm:text-sm text-blue-600 font-medium">Análise feita em Junho 2025</p>
+                          </div>
+                          <div className="mb-3">
+                            <svg
+                              className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 float-left mr-1 mt-1"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
+                            </svg>
                             <p className="text-[#444444] text-base sm:text-lg leading-relaxed font-normal">
-                              Eu desconfiava, mas nunca tive certeza... Quando vi o relatório mostrando as conversas recentes, caiu a ficha. Não queria acreditar… Mas os dados não mentem.
+                              Eu desconfiava, mas nunca tive certeza... Quando vi o relatório mostrando as conversas
+                              recentes, caiu a ficha. Não queria acreditar… Mas os dados não mentem.
                             </p>
                           </div>
                           <div className="flex items-center text-[#FFD700] text-sm sm:text-base gap-1">
@@ -661,7 +673,8 @@ export default function SigiloX() {
                           alt="Foto de Fernanda"
                           className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover flex-shrink-0 border-2 border-gray-200 shadow-sm"
                           onError={(e) => {
-                            e.currentTarget.src = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+                            e.currentTarget.src =
+                              "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
                           }}
                         />
                         <div className="flex-1 min-w-0 text-left">
@@ -670,11 +683,17 @@ export default function SigiloX() {
                             <p className="text-xs sm:text-sm text-green-600 font-medium">✓ Usuária Verificada</p>
                           </div>
                           <div className="mb-3">
-                            <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 float-left mr-1 mt-1" fill="currentColor" viewBox="0 0 24 24">
-                              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                            <svg
+                              className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 float-left mr-1 mt-1"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
                             </svg>
                             <p className="text-[#444444] text-base sm:text-lg leading-relaxed font-normal">
-                              Sempre confiei nele... Até começar a perceber algumas mudanças. Fiz a análise por impulso... E o que encontrei me deixou sem chão. Mas prefiro saber a verdade do que viver na dúvida.
+                              Sempre confiei nele... Até começar a perceber algumas mudanças. Fiz a análise por
+                              impulso... E o que encontrei me deixou sem chão. Mas prefiro saber a verdade do que viver
+                              na dúvida.
                             </p>
                           </div>
                           <div className="flex items-center text-[#FFD700] text-sm sm:text-base gap-1">
@@ -701,6 +720,7 @@ export default function SigiloX() {
                     </p>
                   </div>
                 </div>
+              </div>
             </motion.div>
           )}
 
@@ -711,8 +731,9 @@ export default function SigiloX() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="min-h-screen bg-[#6C63FF] relative overflow-hidden">
-              {/* * Floating dots - Reduced for mobile */}
+              className="min-h-screen bg-[#6C63FF] relative overflow-hidden"
+            >
+              {/* Floating dots - Reduced for mobile */}
               <div className="absolute inset-0">
                 {[...Array(10)].map((_, i) => (
                   <motion.div
@@ -1210,7 +1231,8 @@ export default function SigiloX() {
                     {/* Geolocation info */}
                     {city && (
                       <p className="text-xs sm:text-sm opacity-90 mt-2 font-medium">
-                        Últimos registros de uso detectados em <span className="text-yellow-300 font-bold underline">{city}</span>.
+                        Últimos registros de uso detectados em{" "}
+                        <span className="text-yellow-300 font-bold underline">{city}</span>.
                       </p>
                     )}
                   </CardContent>
@@ -1218,89 +1240,88 @@ export default function SigiloX() {
 
                 {/* Blocked Photos */}
                 <Card className="bg-gray-900 text-white mb-4 sm:mb-6 rounded-2xl border-0 shadow-xl">
-                  
-                <CardContent className="p-4 sm:p-6 text-center">
-                  <div className="flex items-center justify-between mb-4 sm:mb-6 text-xs">
-                    <span className="bg-[#FF3B30] px-2 sm:px-3 py-1 sm:py-2 rounded-full font-bold">
-                      ONLINE AGORA!
-                    </span>
-                    <span className="bg-[#FFA500] text-black px-2 sm:px-3 py-1 sm:py-2 rounded-full font-bold">
-                      TESTE GRÁTIS
-                    </span>
-                    <span className="font-bold">1/4</span>
-                  </div>
+                  <CardContent className="p-4 sm:p-6 text-center">
+                    <div className="flex items-center justify-between mb-4 sm:mb-6 text-xs">
+                      <span className="bg-[#FF3B30] px-2 sm:px-3 py-1 sm:py-2 rounded-full font-bold">
+                        ONLINE AGORA!
+                      </span>
+                      <span className="bg-[#FFA500] text-black px-2 sm:px-3 py-1 sm:py-2 rounded-full font-bold">
+                        TESTE GRÁTIS
+                      </span>
+                      <span className="font-bold">1/4</span>
+                    </div>
 
-                  <Lock className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 text-gray-400" />
-                  <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">FOTOS BLOQUEADAS</h3>
-                  <p className="text-gray-300 text-sm mb-3 sm:mb-4">PARA SUA SEGURANÇA</p>
+                    <Lock className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 text-gray-400" />
+                    <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">FOTOS BLOQUEADAS</h3>
+                    <p className="text-gray-300 text-sm mb-3 sm:mb-4">PARA SUA SEGURANÇA</p>
 
-                  {/* Carrossel de Imagens Bloqueadas */}
-                  <div className="relative mb-6 sm:mb-8 max-w-xs mx-auto">
-                    <div className="overflow-hidden rounded-2xl bg-gray-800 border-2 border-gray-600">
-                      <div 
-                        className="flex transition-transform duration-300 ease-in-out"
-                        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-                      >
-                        {blockedImages.map((image, index) => (
-                          <div key={index} className="min-w-full relative">
-                            <img
-                              src={image || "/placeholder.svg"}
-                              alt={`Foto bloqueada ${index + 1}`}
-                              className="w-full h-48 sm:h-56 object-cover"
-                              style={{ filter: 'blur(12px) brightness(0.7)' }}
-                            />
-                            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                              <div className="text-center">
-                                <Lock className="w-8 h-8 sm:w-10 sm:h-10 text-white mx-auto mb-2 opacity-80" />
-                                <p className="text-white text-xs font-bold opacity-80">BLOQUEADO</p>
+                    {/* Carrossel de Imagens Bloqueadas */}
+                    <div className="relative mb-6 sm:mb-8 max-w-xs mx-auto">
+                      <div className="overflow-hidden rounded-2xl bg-gray-800 border-2 border-gray-600">
+                        <div
+                          className="flex transition-transform duration-300 ease-in-out"
+                          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                        >
+                          {blockedImages.map((image, index) => (
+                            <div key={index} className="min-w-full relative">
+                              <img
+                                src={image || "/placeholder.svg"}
+                                alt={`Foto bloqueada ${index + 1}`}
+                                className="w-full h-48 sm:h-56 object-cover"
+                                style={{ filter: "blur(12px) brightness(0.7)" }}
+                              />
+                              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                                <div className="text-center">
+                                  <Lock className="w-8 h-8 sm:w-10 sm:h-10 text-white mx-auto mb-2 opacity-80" />
+                                  <p className="text-white text-xs font-bold opacity-80">BLOQUEADO</p>
+                                </div>
                               </div>
                             </div>
-                          </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Setas de Navegação */}
+                      <button
+                        onClick={prevSlide}
+                        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white rounded-full p-2 transition-all duration-200 backdrop-blur-sm"
+                      >
+                        <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        </svg>
+                      </button>
+                      <button
+                        onClick={nextSlide}
+                        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white rounded-full p-2 transition-all duration-200 backdrop-blur-sm"
+                      >
+                        <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </button>
+
+                      {/* Indicadores de Slide */}
+                      <div className="flex justify-center mt-3 space-x-2">
+                        {blockedImages.map((_, index) => (
+                          <button
+                            key={index}
+                            onClick={() => setCurrentSlide(index)}
+                            className={`w-2 h-2 rounded-full transition-all duration-200 ${
+                              index === currentSlide ? "bg-white" : "bg-gray-500"
+                            }`}
+                          />
                         ))}
                       </div>
                     </div>
-                    
-                    {/* Setas de Navegação */}
-                    <button
-                      onClick={prevSlide}
-                      className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white rounded-full p-2 transition-all duration-200 backdrop-blur-sm"
-                    >
-                      <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                      </svg>
-                    </button>
-                    <button
-                      onClick={nextSlide}
-                      className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white rounded-full p-2 transition-all duration-200 backdrop-blur-sm"
-                    >
-                      <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </button>
 
-                    {/* Indicadores de Slide */}
-                    <div className="flex justify-center mt-3 space-x-2">
-                      {blockedImages.map((_, index) => (
-                        <button
-                          key={index}
-                          onClick={() => setCurrentSlide(index)}
-                          className={`w-2 h-2 rounded-full transition-all duration-200 ${
-                            index === currentSlide ? 'bg-white' : 'bg-gray-500'
-                          }`}
-                        />
-                      ))}
-                    </div>
-                  </div>
+                    <p className="text-xs text-gray-400 mb-6 sm:mb-8 px-2 leading-relaxed">
+                      ⚠️ Por questões de segurança, as fotos e conversas estão bloqueadas. Para liberar o acesso
+                      completo, finalize a validação de segurança abaixo.
+                    </p>
 
-                  <p className="text-xs text-gray-400 mb-6 sm:mb-8 px-2 leading-relaxed">
-                    ⚠️ Por questões de segurança, as fotos e conversas estão bloqueadas. Para liberar o acesso
-                    completo, finalize a validação de segurança abaixo.
-                  </p>
-
-                  <Button className="w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-2 sm:py-3 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 touch-manipulation">
-                    👁️ VER FOTOS COMPLETAS AGORA
-                  </Button>
-                </CardContent>
+                    <Button className="w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-2 sm:py-3 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 touch-manipulation">
+                      👁️ VER FOTOS COMPLETAS AGORA
+                    </Button>
+                  </CardContent>
                 </Card>
 
                 {/* Timer with Enhanced Tension */}
