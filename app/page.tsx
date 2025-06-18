@@ -1434,7 +1434,7 @@ export default function SigiloX() {
                     Veja as fotos, conversas e localização exata do perfil.
                   </p>
                   <Button
-                    onClick={() => window.open("https://go.mundpay.com/xzbbnljpyb", "_blank")}
+                    onClick={() => setCurrentStep("offer")}
                     className="bg-gradient-to-r from-[#FF0066] to-[#FF3333] hover:from-[#FF0066] hover:to-[#FF3333] text-white font-bold py-3 sm:py-4 px-6 sm:px-8 text-base sm:text-lg rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full touch-manipulation"
                   >
                     🔓 DESBLOQUEAR RELATÓRIO AGORA
@@ -1446,6 +1446,7 @@ export default function SigiloX() {
           )}
 
           {/* Offer - Mobile Optimized */}
+
           {currentStep === "offer" && (
             <motion.div
               key="offer"
@@ -1460,27 +1461,126 @@ export default function SigiloX() {
                   <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-[#FF0066] to-[#FF3333] rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-2xl">
                     <Lock className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                   </div>
-                  <div className="bg-blue-100 border border-blue-300 rounded-2xl p-3 sm:p-4 mb-4 sm:mb-6">
-                    <p className="text-blue-800 text-xs sm:text-sm font-bold">
-                      🛡️ ACESSO EXCLUSIVO: Apenas para usuários que concluíram a análise
+                  <div className="bg-green-100 border border-green-300 rounded-2xl p-3 sm:p-4 mb-4 sm:mb-6">
+                    <p className="text-green-800 text-xs sm:text-sm font-bold">
+                      ✅ ANÁLISE CONCLUÍDA COM SUCESSO - Relatório pronto para visualização
                     </p>
                   </div>
                   <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#333333] mb-3 sm:mb-4">
-                    🔒 Seu Relatório Está Pronto – Libere o Acesso Agora
+                    🔓 Libere Seu Relatório Completo
                   </h1>
-                  <p className="text-gray-600 text-sm sm:text-base px-4 leading-relaxed">
-                    Por motivos de segurança, só usuários que concluíram a análise podem visualizar o conteúdo completo.
+                  <p className="text-gray-600 text-sm sm:text-base px-4 leading-relaxed mb-4">
+                    Todas as informações foram coletadas e estão prontas para visualização. Libere o acesso agora e
+                    descubra a verdade.
                   </p>
                 </div>
 
-                {/* Offer Card */}
+                {/* Timer Card */}
+                <Card className="bg-[#FF3B30] text-white mb-6 sm:mb-8 rounded-2xl border-0 shadow-xl">
+                  <CardContent className="p-4 sm:p-6 text-center">
+                    <div className="flex items-center justify-center gap-2 mb-3">
+                      <AlertTriangle className="w-5 h-5 animate-bounce" />
+                      <span className="font-bold text-base">OFERTA EXPIRA EM:</span>
+                    </div>
+                    <div className="text-2xl sm:text-3xl font-bold mb-2">{formatTime(timeLeft)}</div>
+                    <p className="text-xs opacity-90">Após este tempo, você precisará refazer toda a análise</p>
+                  </CardContent>
+                </Card>
+
+                {/* Price Anchoring Card */}
+                <Card className="bg-white mb-6 sm:mb-8 rounded-2xl border-2 border-[#FF0066] shadow-xl">
+                  <CardContent className="p-6 sm:p-8 text-center">
+                    <div className="mb-4">
+                      <span className="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-bold">
+                        DESCONTO ESPECIAL
+                      </span>
+                    </div>
+
+                    <h2 className="text-xl sm:text-2xl font-bold text-[#333333] mb-4">Acesso Completo ao Relatório</h2>
+
+                    <div className="mb-6">
+                      <div className="flex items-center justify-center gap-3 mb-3">
+                        <span className="text-2xl sm:text-3xl font-bold text-gray-400 line-through">R$ 47,00</span>
+                        <span className="bg-red-500 text-white px-2 py-1 rounded text-xs font-bold">-43%</span>
+                      </div>
+                      <div className="text-3xl sm:text-4xl font-bold text-[#FF0066] mb-2">R$ 27,00</div>
+                      <p className="text-sm text-gray-600">Pagamento único • Sem mensalidades • Acesso imediato</p>
+                    </div>
+
+                    {/* What's Included */}
+                    <div className="bg-gray-50 rounded-2xl p-4 sm:p-6 mb-6 text-left">
+                      <h3 className="font-bold text-[#333333] mb-4 text-center">O que você vai receber:</h3>
+                      <div className="space-y-3">
+                        <div className="flex items-center gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                          <span className="text-sm">Fotos completas do perfil no Tinder</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                          <span className="text-sm">Histórico de conversas recentes</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                          <span className="text-sm">Localização exata dos últimos acessos</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                          <span className="text-sm">Relatório de atividade detalhado</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                          <span className="text-sm">Matches e curtidas dos últimos 30 dias</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* CTA Button */}
+                    <Button
+                      onClick={() => window.open("https://go.mundpay.com/xzbbnljpyb", "_blank")}
+                      className="bg-gradient-to-r from-[#FF0066] to-[#FF3333] hover:from-[#FF0066] hover:to-[#FF3333] text-white font-bold py-4 px-6 text-base sm:text-lg rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full mb-4 touch-manipulation"
+                    >
+                      🔓 LIBERAR RELATÓRIO POR R$ 27,00
+                    </Button>
+
+                    <div className="space-y-2 text-xs text-gray-500">
+                      <p className="flex items-center justify-center gap-2">
+                        <Shield className="w-4 h-4" />
+                        Pagamento 100% seguro e criptografado
+                      </p>
+                      <p>💳 Cartão, PIX ou Boleto • Processamento imediato</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Urgency Card */}
+                <Card className="bg-yellow-50 border-2 border-yellow-300 rounded-2xl mb-6">
+                  <CardContent className="p-4 sm:p-6 text-center">
+                    <div className="flex items-center justify-center gap-2 mb-3">
+                      <AlertTriangle className="w-5 h-5 text-yellow-600" />
+                      <span className="font-bold text-yellow-800">ATENÇÃO</span>
+                    </div>
+                    <p className="text-yellow-800 text-sm leading-relaxed">
+                      Este desconto é válido apenas para quem concluiu a análise hoje. Após o tempo expirar, o valor
+                      volta para <strong>R$ 47,00</strong> e você precisará refazer todo o processo.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* Social Proof */}
+                <div className="text-center mb-6">
+                  <p className="text-xs text-gray-500 mb-3">Mais de 2.847 pessoas já liberaram seus relatórios hoje</p>
+                  <div className="flex justify-center items-center gap-1 text-yellow-500">
+                    <span>⭐⭐⭐⭐⭐</span>
+                    <span className="text-xs text-gray-600 ml-2">4.9/5 (1.234 avaliações)</span>
+                  </div>
+                </div>
+
+                {/* Guarantee */}
                 <div className="text-center">
-                  <Button className="bg-gradient-to-r from-[#FF0066] to-[#FF3333] hover:from-[#FF0066] hover:to-[#FF3333] text-white font-bold py-3 sm:py-4 px-6 sm:px-8 text-base sm:text-lg rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full mb-3 touch-manipulation">
-                    🔓 LIBERAR RELATÓRIO E VER TUDO AGORA
-                  </Button>
-                  <p className="text-sm text-[#333333] font-medium">
-                    Garantia de anonimato • Conexão segura • Liberação imediata
-                  </p>
+                  <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-xs font-medium">
+                    <Shield className="w-4 h-4" />
+                    Garantia de 7 dias ou seu dinheiro de volta
+                  </div>
                 </div>
               </div>
             </motion.div>
